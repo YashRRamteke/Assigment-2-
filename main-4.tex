@@ -1,0 +1,60 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+
+\usepackage{tfrupee}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphics}
+\usepackage{amsmath}
+
+
+\title{\textbf{\underline{Assignment 2}}}
+\author{\textbf{\textit{Yash R Ramteke}}\\
+\textbf{\textit{bt21btech11006}}}
+
+\begin{document}
+
+\maketitle
+
+\textbf{Question:}
+Determine the binomial distribution where mean is $9$ and standard deviation is $\frac{3}{2}$ Also, find the probability of obtaining at most one success.
+\textbf{}
+
+\bigskip
+
+\textbf{Solution:}
+\bigskip
+For binomial distribution :\\
+\bigskip
+ Given, Mean = $9$ and Standard Deviation(S.D) = $\frac{3}{2}$ \\
+\bigskip
+Mean = np = $9$ ...\textit{(I)}\\
+\bigskip
+Variance = $(S.D.)^{2}$ = npq =  $\frac{9}{4}$  ...\textit{(II})\\
+\bigskip
+By substituting equation (I) in equation (II), q = $\frac{1}{4}$\\
+\bigskip
+Since, p = $1 - q$\\
+\bigskip
+p = $1$ - $\frac{1}{4}$ = $\frac{3}{4}$  ...\textit({III})\\
+\bigskip
+Using eqn (III) in eqn (I) \\
+\bigskip
+n = $\frac{9}{p}$ = $\frac{4 * 9}{3}$ = $12$\\
+\bigskip
+- \textbf{Thus Binomial distribution is:} \\
+P(x=r) = $^{12}C_r$ $(\frac{3}{4})^r$ $(\frac{1}{4})^{12-r}$\\
+r = $0,1,2,3...$\\
+\bigskip
+
+\textbf{- P(at most one success)} = P(x=0) + P(x=1)\\
+\bigskip
+
+= $^{12}C_0$ $(\frac{3}{4})^0$ $(\frac{1}{4})^{12}$ + $^{12}C_1$ $(\frac{3}{4})^1$ $(\frac{1}{4})^{11}$\\
+
+\bigskip
+= $(\frac{1}{12})^{12} + 36(\frac{1}{12}^{12}) = \frac{37}{4^{12}}$
+                  
+
+
+
+
+\end{document}
