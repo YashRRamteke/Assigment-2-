@@ -1,0 +1,66 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+
+\usepackage{tfrupee}
+\usepackage{bm}
+\usepackage{stfloats}
+\usepackage{polynom}
+\usepackage{gensymb}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphics}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{amsfonts,amssymb} 
+
+\title{\textbf{\underline{Assignment 2}}}
+\author{\textbf{\textit{Yash R Ramteke}}\\
+\textbf{\textit{bt21btech11006}}}
+
+\begin{document}
+
+\maketitle
+
+\textbf{Question:}
+Determine the binomial distribution where mean is $9$ and standard deviation is $\frac{3}{2}$ Also, find the probability of obtaining at most one success.
+
+\bigskip
+\textbf{Solution:}
+For binomial distribution :\\
+Given, Mean = $9$ and Standard Deviation(S.D) = $\frac{3}{2}$
+\begin{align}
+    \text{Mean = np} = 9
+    \\
+    \text{Variance} = (\text{S.D.})^{2} = \text{npq} = \frac{9}{4}
+\end{align}
+By substituting equation($1$) in equation($2$):
+\begin{align}
+      \text{q} = \frac{1}{4}
+\end{align}
+Since, p = $1$ - q
+\begin{align}
+      \text{p} = 1 - \frac{1}{4} = \frac{3}{4} 
+\end{align}\\
+Using equation ($4$) in equation ($1$):
+\begin{align}
+      \text{n} = \frac{9}{p} = \frac{4\times9}{3} = 12
+\end{align}\\
+Thus Binomial distribution is:
+\begin{align}
+   \left(\text{p + q}\right)^n =  \left(\frac{3}{4} + \frac{1}{4}\right)^{12}
+\end{align}
+{\text{OR}}
+\begin{align}
+\text{P(x=r)} = ^{12}C_r \left(\frac{3}{4}\right)^r \left(\frac{1}{4}\right)^{12-r}
+\end{align}
+
+\begin{center}
+     \text{r = $0,1,2,3...$}
+\end{center}
+P(at most one success) = P(x=0) + P(x=1)
+\begin{align}
+= ^{12}C_0 \left({\frac{3}{4}}\right)^0 \left(\frac{1}{4}\right)^{12} + ^{12}C_1 \left(\frac{3}{4}\right)^1 \left(\frac{1}{4}\right)^{11} 
+\\
+= \left(\frac{1}{4}\right)^{12} + 36\left(\frac{1}{4}\right)^{12} =  \frac{37}{4^{12}}
+\end{align}
+
+\end{document}
